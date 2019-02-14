@@ -1,23 +1,25 @@
 <html>
 <head>
-  <link type="text/css" rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
   <title>Dude Where's My Car</title>
+  <link type="text/css" rel="stylesheet" href="FindIt.css">
+  <link type="text/css" rel="stylesheet" href="parkitios.css">
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK2Du7rvxW4d4NQmKg8qAyxaZ0dGgaY5krel"></script>
+  <script type="text/javascript" src="FindIt.js"></script>
 </head>
 <body>
-  <div id="navbar">
-    <button id="park" onClick="setParkingLocation()">Park</button>
-    Park input
-    <button id="retreive" onClick="getParkingLocation()">Find</button>
+  <div id='navbar'>
+     <button id="park" onClick="setParkingLocation()">Park</button>
+     Park input
+     <button id="retreive" onClick="getParkingLocation()">Find</button>
   </div>
   <div id="container">
-    <div id="instructions" class="panel panel-default">
+    <div id="instructions">
       <p>Press the Park button to set the location</p>
       <p>Press the Find button to find the current location</p>
-      <p style="text-align: center"><button id="gotIt" onClick="setCss('instructions','display','none')">Got It</button></p>
+      <p style="text-align: center"><button id="gotIt" onCick="setCss('instructions','display','none')">Got It</button></p>
     </div>
-    <div id="map"></div>
-    <div id="directions"></div>
+    <div id="map"</div>
+    <div id="directions"</div>
   </div>
 </body>
 </html>
