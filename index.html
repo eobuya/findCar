@@ -1,0 +1,23 @@
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <title>Dude Where's My Car</title>
+</head>
+<body>
+  <div id="navbar">
+    <button id="park" onClick="setParkingLocation()">Park</button>
+    Park input
+    <button id="retreive" onClick="getParkingLocation()">Find</button>
+  </div>
+  <div id="container">
+    <div id="instructions" class="panel panel-default">
+      <p>Press the Park button to set the location</p>
+      <p>Press the Find button to find the current location</p>
+      <p style="text-align: center"><button id="gotIt" onClick="setCss('instructions','display','none')">Got It</button></p>
+    </div>
+    <div id="map"></div>
+    <div id="directions"></div>
+  </div>
+</body>
+</html>
